@@ -47,7 +47,7 @@ pub fn set_env_vars() {
     };
     let rusic_port = env::var("RUSIC_PORT");
     if rusic_port.is_err() {
-        env::set_var("RUSIC_PORT", ":8080");
+        env::set_var("RUSIC_PORT", ":8888");
     };
 }
 

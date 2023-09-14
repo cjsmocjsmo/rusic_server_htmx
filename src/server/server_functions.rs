@@ -32,11 +32,11 @@ pub async fn artistcount() -> impl Responder {
     println!("artist_count_vec: {:?}", artist_count_vec.clone());
 
     // THIS IS NEED BY SVELTE DONT DELETE
-    let json = serde_json::to_string(&artist_count_vec).unwrap();
-    HttpResponse::Ok().body(json)
+    // let json = serde_json::to_string(&artist_count_vec).unwrap();
+    // HttpResponse::Ok().body(json)
 
-    // let frag  = crate::server::fragments::frag_artiscount(artist_count_vec);
-    // HttpResponse::Ok().body(frag)
+    let frag  = crate::server::fragments::frag_artiscount(artist_count_vec);
+    HttpResponse::Ok().body(frag)
 }
 
 #[get("/albumcount")]
@@ -57,11 +57,11 @@ pub async fn albumcount() -> impl Responder {
     println!("album_count_vec: {:?}", album_count_vec.clone());
 
     // THIS IS NEED BY SVELTE DONT DELETE
-    let json = serde_json::to_string(&album_count_vec).unwrap();
-    HttpResponse::Ok().body(json)
+    // let json = serde_json::to_string(&album_count_vec).unwrap();
+    // HttpResponse::Ok().body(json)
 
-//     let frag  = crate::server::fragments::frag_albumcount(album_count_vec);
-//     HttpResponse::Ok().body(frag)
+    let frag  = crate::server::fragments::frag_albumcount(album_count_vec);
+    HttpResponse::Ok().body(frag)
 }
 
 #[get("/artistforalpha/{alpha}")]
