@@ -9,17 +9,17 @@ pub fn set_env_vars() {
 
     let db_path = env::var("RUSIC_DB_PATH");
     if db_path.is_err() {
-        env::set_var("RUSIC_DB_PATH", "/usr/share/rusic/rusic/db/rusic.db");
+        env::set_var("RUSIC_DB_PATH", "/usr/share/rusic_server_htmx/rusic_server_htmx/db/rusic.db");
     };
     let db_check_file_path = env::var("RUSIC_DB_CHECK_FILE_PATH");
     if db_check_file_path.is_err() {
-        env::set_var("RUSIC_DB_CHECK_FILE_PATH", "/usr/share/rusic/rusic/db/db_check_file.txt");
+        env::set_var("RUSIC_DB_CHECK_FILE_PATH", "/usr/share/rusic_server_htmx/rusic_server_htmx/db/db_check_file.txt");
     };
 
 
     let no_art_pic = env::var("RUSIC_NO_ART_PIC");
     if no_art_pic.is_err() {
-        env::set_var("RUSIC_NO_ART_PIC", "/usr/share/rusic/rusic/no_art_pic.jpg");
+        env::set_var("RUSIC_NO_ART_PIC", "/usr/share/rusic_server_htmx/rusic_server_htmx/no_art_pic.jpg");
     };
     let pagination = env::var("RUSIC_PAGINATION");
     if pagination.is_err() {
@@ -27,15 +27,15 @@ pub fn set_env_vars() {
     };
     let rusic = env::var("RUSIC_PATH");
     if rusic.is_err() {
-        env::set_var("RUSIC_PATH", "/usr/share/rusic/rusic");
+        env::set_var("RUSIC_PATH", "/usr/share/rusic_server_htmx/rusic_server_htmx");
     };
     let rusic_thumbs = env::var("RUSIC_THUMBS");
     if rusic_thumbs.is_err() {
-        env::set_var("RUSIC_THUMBS", "/usr/share/rusic/rusic/thumbs");
+        env::set_var("RUSIC_THUMBS", "/usr/share/rusic_server_htmx/rusic_server_htmx/thumbs");
     };
     let rusic_nfo = env::var("RUSIC_NFOS");
     if rusic_nfo.is_err() {
-        env::set_var("RUSIC_NFOS", "/usr/share/rusic/rusic/nfo");
+        env::set_var("RUSIC_NFOS", "/usr/share/rusic_server_htmx/rusic_server_htmx/nfo");
     };
     let rusic_raw_http = env::var("RUSIC_RAW_HTTP");
     if rusic_raw_http.is_err() {
